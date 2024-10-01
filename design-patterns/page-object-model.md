@@ -11,3 +11,11 @@ PageFactory.initElements(driver, this); // Initializing the web elements in page
 ```
 
 If there are any new changes on the application page, the test cases needn't be changed, only the code within the Page Object Model needs to change. According to the POM, the test cases and element locators need to be kept separate, which ensures cleaner code and easier maintainability.
+### Advantages
+Page Object Model avoids problems such as duplication of elements/locators and updation.
+<br /> <br />
+There are two approaches to creating Page Object classes:
+1. Using PageFactory
+2. Without using PageFactory
+
+The Page Object class contains only page elements and corresponding action methods. Every Page Object class should contain the following three items: Locators, Constructor and Action methods. The constructor initiates the driver.
